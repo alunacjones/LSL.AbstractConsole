@@ -12,7 +12,7 @@ namespace LSL.IConsole
         /// </summary>
         /// <param name="text">The text to write</param>
         /// <param name="includeNewLine">Append a new line to the text if <c>true</c></param>
-        /// <param name="args">Any arguments if the message has placeholders in it</param>
+        /// <param name="args">Any arguments if the <c>text</c> has placeholders in it</param>
         /// <returns></returns>
         IConsole Write(string text, bool includeNewLine, IEnumerable<object> args);
     }

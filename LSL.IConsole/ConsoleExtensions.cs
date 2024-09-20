@@ -36,7 +36,7 @@ namespace LSL.IConsole
         public static IConsole WriteLine(this IConsole console, string text) => console.Write(text, true, _emptyArgs);
 
         /// <summary>
-        /// 
+        /// Writes the placeholder formatted <c>text</c> to the <c>IConsole</c> including an environment specific <c>NewLine</c>
         /// </summary>
         /// <param name="console"></param>
         /// <param name="text">The placeholder formatted message</param>
@@ -44,6 +44,11 @@ namespace LSL.IConsole
         /// <returns>The original <c>IConsole</c> to chain calls with</returns>
         public static IConsole WriteLine(this IConsole console, string text, params object[] args) => console.Write(text, true, args);
 
+        /// <summary>
+        /// Writes a new line with no content
+        /// </summary>
+        /// <param name="console"></param>
+        /// <returns>The original <c>IConsole</c> to chain calls with</returns>
         public static IConsole WriteLine(this IConsole console) => console.WriteLine(string.Empty, true, _emptyArgs);
     }
 }
