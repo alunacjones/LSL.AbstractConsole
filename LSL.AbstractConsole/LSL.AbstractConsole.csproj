@@ -13,8 +13,8 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
-    <Version>1.0.1</Version>
-    <PackageVersion>1.0.1</PackageVersion>
+    <Version>1.1.0</Version>
+    <PackageVersion>1.1.0</PackageVersion>
     <PackageTags>iconsole;abstract;console</PackageTags>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageDescription>An very simple IConsole abstraction with a default implementation that is given a TextWriter to output messages</PackageDescription>
