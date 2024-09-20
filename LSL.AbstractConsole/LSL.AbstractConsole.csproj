@@ -19,7 +19,7 @@
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageDescription>An very simple IConsole abstraction with a default implementation that is given a TextWriter to output messages</PackageDescription>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/alunacjones/LSL.IConsole</RepositoryUrl>
+    <RepositoryUrl>https://github.com/alunacjones/LSL.AbstractConsole</RepositoryUrl>
     <Authors>alunacjones</Authors>
   </PropertyGroup>
 

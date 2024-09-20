@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSL.IConsole.Tests", "LSL.IConsole.Tests\LSL.IConsole.Tests.csproj", "{D68EF940-7562-4B54-86B6-86949D64ED12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSL.AbstractConsole.Tests", "LSL.AbstractConsole.Tests\LSL.AbstractConsole.Tests.csproj", "{D68EF940-7562-4B54-86B6-86949D64ED12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSL.IConsole", "LSL.IConsole\LSL.IConsole.csproj", "{73AEE648-FC6A-4528-A0E5-548AB5981676}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSL.AbstractConsole", "LSL.AbstractConsole\LSL.AbstractConsole.csproj", "{73AEE648-FC6A-4528-A0E5-548AB5981676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

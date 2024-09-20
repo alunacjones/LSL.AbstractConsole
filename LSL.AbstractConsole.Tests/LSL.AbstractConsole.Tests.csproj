@@ -24,6 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LSL.IConsole\LSL.IConsole.csproj" />
+    <ProjectReference Include="..\LSL.AbstractConsole\LSL.AbstractConsole.csproj" />
   </ItemGroup>
 </Project>

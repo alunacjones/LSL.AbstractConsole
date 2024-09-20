@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace LSL.IConsole
+namespace LSL.AbstractConsole
 {
     /// <summary>
     /// A default implementation of <c>IConsole</c> that writes to a provided <c>TextWriter</c>

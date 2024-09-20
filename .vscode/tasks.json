@@ -26,7 +26,7 @@
             },
             "args": [
                 "test",
-                "${workspaceFolder}/LSL.IConsole.sln",
+                "${workspaceFolder}/LSL.AbstractConsole.sln",
                 "/p:CollectCoverage=true",
                 "/p:CoverletOutputFormat=\"opencover,lcov\"",
                 "/p:CoverletOutput=../lcov"

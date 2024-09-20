@@ -10,8 +10,8 @@ environment:
     secure: 8dwhU0D9ziN3eO21jNuk7XFRU9SpDv8laszr+gCTiwxJx/XmaHGtLn8meL5BIZFV
 install:
   - ps: iex ((New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/appveyor/secure-file/master/install.ps1'))
-  - cmd: appveyor-tools\secure-file -decrypt LSL.IConsole\LSL.snk.enc -secret %keyfile_secret% -salt %keyfile_salt%
-  - sh: ./appveyor-tools/secure-file -decrypt LSL.IConsole/LSL.snk.enc -secret $keyfile_secret -salt $keyfile_salt    
+  - cmd: appveyor-tools\secure-file -decrypt LSL.AbstractConsole\LSL.snk.enc -secret %keyfile_secret% -salt %keyfile_salt%
+  - sh: ./appveyor-tools/secure-file -decrypt LSL.AbstractConsole/LSL.snk.enc -secret $keyfile_secret -salt $keyfile_salt    
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'

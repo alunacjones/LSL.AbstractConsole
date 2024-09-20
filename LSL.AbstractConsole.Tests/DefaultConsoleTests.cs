@@ -1,7 +1,7 @@
 using System.IO;
 using FluentAssertions;
 
-namespace LSL.IConsole.Tests;
+namespace LSL.AbstractConsole.Tests;
 
 public class DefaultConsoleTests
 {

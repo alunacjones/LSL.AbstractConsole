@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace LSL.IConsole
+namespace LSL.AbstractConsole
 {
     /// <summary>
     /// The basic abstraction of a console to write to
