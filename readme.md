@@ -1,5 +1,5 @@
 [![Build status](https://img.shields.io/appveyor/ci/alunacjones/lsl-iconsole.svg)](https://ci.appveyor.com/project/alunacjones/lsl-iconsole)
-[![Coveralls branch](https://img.shields.io/coverallsCoverage/github/alunacjones/LSL.IConsole)](https://coveralls.io/github/alunacjones/LSL.LSL.IConsole)
+[![Coveralls branch](https://img.shields.io/coverallsCoverage/github/alunacjones/LSL.AbstractConsole)](https://coveralls.io/github/alunacjones/LSL.LSL.AbstractConsole)
 [![NuGet](https://img.shields.io/nuget/v/LSL.AbstractConsole.svg)](https://www.nuget.org/packages/LSL.AbstractConsole/)
 
 # LSL.AbstractConsole
