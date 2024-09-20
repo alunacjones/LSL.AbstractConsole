@@ -20,13 +20,16 @@ public class DefaultConsoleTests
             .WriteLine("and another with {0}", "more stuff");
 
         // Assert        
-        writer.ToString().Should().Be(
+        writer
+            .ToString()
+            .ReplaceLineEndings()
+            .Should().Be(
             """
             some text with stuff
             another line
             and another with more stuff
-            
-            """
+
+            """.ReplaceLineEndings()
         );
     }
 }
