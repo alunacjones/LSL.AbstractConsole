@@ -28,6 +28,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LSL.AppVeyor.Helpers" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="..\readme.md" Pack="true" PackagePath=""/>
   </ItemGroup>   
 </Project>

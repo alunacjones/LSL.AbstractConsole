@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using FluentAssertions;
 using FluentAssertions.Execution;
+using LSL.AppVeyor.Helpers;
 
 namespace LSL.AbstractConsole.Tests;
 
@@ -31,27 +32,13 @@ public class DefaultConsoleTests
         
         writer
             .ToString()
-            //.ReplaceLineEndings()
             .Should().Be(
             """
             some text with stuff
             another line
             and another with more stuff
 
-            """.FixStringConstantForAppVeyor()//.ReplaceLineEndings()
+            """.FixStringConstantNewLines()
         );
-    }
-}
-
-public static class StringFixingExtensionsForAppVeyor
-{
-    public static string FixStringConstantForAppVeyor(this string source)
-    {
-        if (source.IndexOf("\r\n") > -1)
-        {
-            return source;
-        }
-
-        return source.ReplaceLineEndings("\r\n");
     }
 }
