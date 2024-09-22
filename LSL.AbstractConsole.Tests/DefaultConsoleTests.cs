@@ -12,7 +12,7 @@ public class DefaultConsoleTests
         // Arrange
         using var writer = new StringWriter
         {
-            NewLine = Environment.NewLine
+            NewLine = "\r\n"
         };
         var sut = new DefaultConsole(writer);
 

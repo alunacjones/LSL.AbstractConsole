@@ -29,7 +29,7 @@ build_script:
     dotnet pack -c Release
 test_script:
 - cmd: dotnet test -c Release --no-build --no-restore --test-adapter-path:. --logger:Appveyor /p:CollectCoverage=true /p:CoverletOutputFormat="opencover" /p:CoverletOutput=../lcov
-- cmd: dotnet csmacnz.Coveralls --opencover -i .\lcov.opencover.xml --useRelativePaths
+#- cmd: dotnet csmacnz.Coveralls --opencover -i .\lcov.opencover.xml --useRelativePaths
 artifacts:
 - path: '**\*.nupkg'
 # deploy:
