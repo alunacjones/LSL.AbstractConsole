@@ -11,7 +11,7 @@ public class DefaultConsoleTests
     public void GivenCallsToTheConsole_ThenItShouldProduceTheExpectedResult()
     {
         // Arrange
-        using var writer = new FixedStringWriter();
+        using var writer = new StringWriter();
 
         var sut = new DefaultConsole(writer);
 
@@ -43,10 +43,15 @@ public class DefaultConsoleTests
     }
 }
 
-public class FixedStringWriter : StringWriter
+public static class StringFixingExtensionsForAppVeyor
 {
-    public override void WriteLine()
+    public static string FixStringConstantForAppVeyor(string str)
     {
-        WriteLine("\n");
+        if (str.IndexOf("\r\n") > -1)
+        {
+            return str;
+        }
+
+        return str.ReplaceLineEndings("\r\n");
     }
 }
