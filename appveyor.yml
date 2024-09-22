@@ -32,11 +32,11 @@ test_script:
 - cmd: dotnet csmacnz.Coveralls --opencover -i .\lcov.opencover.xml --useRelativePaths
 artifacts:
 - path: '**\*.nupkg'
-deploy:
-- provider: NuGet
-  on:
-    branch: master
-  api_key: $(MY_NUGET_API_KEY)
+# deploy:
+# - provider: NuGet
+#   on:
+#     branch: master
+#   api_key: $(MY_NUGET_API_KEY)
 skip_commits:
   files:
     - '**/*.md'     

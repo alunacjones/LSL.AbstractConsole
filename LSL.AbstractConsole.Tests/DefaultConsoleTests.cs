@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using FluentAssertions;
 
@@ -9,7 +10,10 @@ public class DefaultConsoleTests
     public void GivenCallsToTheConsole_ThenItShouldProduceTheExpectedResult()
     {
         // Arrange
-        using var writer = new StringWriter();
+        using var writer = new StringWriter
+        {
+            NewLine = Environment.NewLine
+        };
         var sut = new DefaultConsole(writer);
 
         // Act
@@ -22,14 +26,14 @@ public class DefaultConsoleTests
         // Assert        
         writer
             .ToString()
-            .ReplaceLineEndings()
+            //.ReplaceLineEndings()
             .Should().Be(
             """
             some text with stuff
             another line
             and another with more stuff
 
-            """.ReplaceLineEndings()
+            """//.ReplaceLineEndings()
         );
     }
 }
