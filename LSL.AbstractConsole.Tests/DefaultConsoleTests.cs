@@ -38,20 +38,20 @@ public class DefaultConsoleTests
             another line
             and another with more stuff
 
-            """//.ReplaceLineEndings()
+            """.FixStringConstantForAppVeyor()//.ReplaceLineEndings()
         );
     }
 }
 
 public static class StringFixingExtensionsForAppVeyor
 {
-    public static string FixStringConstantForAppVeyor(string str)
+    public static string FixStringConstantForAppVeyor(this string source)
     {
-        if (str.IndexOf("\r\n") > -1)
+        if (source.IndexOf("\r\n") > -1)
         {
-            return str;
+            return source;
         }
 
-        return str.ReplaceLineEndings("\r\n");
+        return source.ReplaceLineEndings("\r\n");
     }
 }
